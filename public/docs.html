@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Uploader API Docs</title>
+  <style>
+    body { font-family: Arial; padding: 40px; max-width: 800px }
+    code { background: #f2f2f2; padding: 4px }
+  </style>
+</head>
+<body>
+  <h1>📡 Link Uploader API</h1>
+
+  <h2>POST /api/upload</h2>
+  <p>Upload file dan dapet link publik</p>
+  <pre>
+FormData:
+- file: File
+
+Response:
+{
+  success: true,
+  url: "https://app/file/abc.png",
+  id: "mongo_id"
+}
+  </pre>
+
+  <h2>GET /api/info/:id</h2>
+  <p>Ambil metadata file</p>
+
+  <p>Buka dokumentasi ini di:</p>
+  <code>/docs.html</code>
+</body>
+</html>
